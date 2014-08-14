@@ -29,7 +29,7 @@ extern "C" void nativeSayHi(JNIEnv * e) {
 }
 
 extern "C" MX3EXPORT jint JNI_OnLoad(JavaVM * vm, void *) {
-	sleep(10);
+	//sleep(10);
 	LOGD("begin");
 
     JNIEnv * env = nullptr;
