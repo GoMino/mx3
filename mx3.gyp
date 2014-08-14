@@ -56,6 +56,11 @@
       'sources': [
         '<!@(find android -name "*.cpp" -o -name "*.c")',
       ],
+      'link_settings': {
+            'ldflags': [
+               '-llog',
+            ]
+      },
     },
     {
       'target_name': 'play_objc',

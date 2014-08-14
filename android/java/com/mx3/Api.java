@@ -1,5 +1,7 @@
 package com.mx3;
 
+import android.util.Log;
+
 public class Api {
     static {
         System.loadLibrary("mx3_jni");
@@ -8,6 +10,7 @@ public class Api {
     Api() {}
 
     public void sayHi() {
+    	Log.d("Api","calling native method");
         nativeSayHi();
     }
 

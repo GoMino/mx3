@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.SlidingDrawer;
 
 public class UsersActivity extends Activity {
 
@@ -21,6 +22,8 @@ public class UsersActivity extends Activity {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		
+		//android.os.Debug.waitForDebugger();
 		Api api = new Api();
 		api.sayHi();
 	}
